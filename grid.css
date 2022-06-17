@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(252, 62%, 8%);
+    height: 100vh;
+    display: flex;
+    place-items: center;
+}
+header>a{
+    color: white;
+    text-decoration: none;
+}
+header>a:hover{
+    text-decoration: none;
+    border-bottom: 3px solid hsl(31, 77%, 52%) ;
+}
+main{
+    display: grid;
+    grid-template-areas: "item-1 item-1 item-1 item-2 item-2"
+                        "item-1 item-1 item-1 item-2 item-2"
+                        "item-1 item-1 item-1 item-2 item-2"
+                        "item-3 item-3 item-4 item-4 item-4"
+                        "item-3 item-3 item-4 item-4 item-4"
+                        "item-3 item-3 item-5 item-5 item-5"
+                        "item-3 item-3 item-5 item-5 item-5"
+                        "item-3 item-3 item-5 item-5 item-5";
+    width: 100%;
+    margin: auto;
+    padding: 100px;
+    grid-auto-rows: minmax(50px, auto);
+    gap: 10px;
+}
+.item-1{
+    grid-area: item-1;
+    background-color: hsl(13, 63%, 53%);
+}
+
+.item-2{
+    grid-area: item-2;
+    background-color: hsl(33, 71%, 52%);
+}
+.item-3{
+    grid-area: item-3;
+    background-color: hsl(123, 76%, 36%);
+}
+.item-4{
+    grid-area: item-4;
+    background-color: hsl(190, 74%, 47%);
+}
+.item-5{
+    grid-area: item-5;
+    background-color: hsl(190, 74%, 47%);
+}
