@@ -32,12 +32,12 @@ p {
 main {
   display: flex;
   width: 65%;
-  flex-direction: row;
-  margin: auto;
+  /* flex-direction: row; */
+  margin: 6% auto auto auto;
   padding: 2em;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   border: none;
   /* flex-wrap: wrap; */
 }
@@ -94,5 +94,17 @@ button:hover {
   background-color: hsla(0, 0%, 95%, 0);
   color: white;
   border: 2px solid white;
-  padding: 0.875em 1.875em;
+  padding: 0.85em 1.875em;
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    flex-direction: column;
+  }
+  .sedans {
+    border-radius: 15px 15px 0 0;
+  }
+  .luxury {
+    border-radius: 0 0 15px 15px;
+  }
 }
