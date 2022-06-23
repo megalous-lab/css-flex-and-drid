@@ -14,8 +14,8 @@ header>a{
     text-decoration: none;
 }
 header>a:hover{
-    text-decoration: none;
-    border-bottom: 3px solid hsl(31, 77%, 52%) ;
+    text-decoration: underline;
+    
 }
 main{
     display: grid;
